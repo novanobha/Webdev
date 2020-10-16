@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+.leftside, .rightside{
+
+height:100vh;
+width: 100%;
+}
+
+.leftside{
+background-color:ivory;
+
+
+}
+
+.leftside{
+background-color:rgb(206, 206, 206);
+
+
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+
+h1 {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+</style>
+
+</style>
+</head>
+<body>
+
+<div class="row">
+
+  <div class="col" >
+    <div class="leftside">
+        <div class="gallery">
+            <a target="_blank" href="https://cdn1.weddingwire.com/assets/img/wedsites/thumb/en/vintage_mountain_md.jpg">
+              <img src="https://cdn1.weddingwire.com/assets/img/wedsites/thumb/en/vintage_mountain_md.jpg" alt="Cinque Terre" width="600" height="400">
+            </a>
+            
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="https://cdn1.weddingwire.com/assets/img/wedsites/thumb/en/confetti_md.jpg">
+              <img src="https://cdn1.weddingwire.com/assets/img/wedsites/thumb/en/confetti_md.jpg" alt="Forest" width="600" height="400">
+            </a>
+            
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="https://cdn1.weddingwire.com/assets/img/wedsites/thumb/en/woodland_deer_md.jpg">
+              <img src="https://cdn1.weddingwire.com/assets/img/wedsites/thumb/en/woodland_deer_md.jpg" alt="Northern Lights" width="600" height="400">
+            </a>
+          </div>
+  </div>
+  </div>
+  {% block content %}
+  <div class="col">
+    <div class="rightside">
+    <h2>Hi {{firstname}} ! Tell us about your wedding!</h2>
+    <form >
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Somersault, State"name='addr'>
+        </div>
+    
+      </div>
+      <div class="row">
+        <div class="col">
+            <input type="date" class="form-control" placeholder="01/01/2021"name='date'>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col">
+                
+              </div>
+              </div>
+      <input class="btn btn-primary" type="submit" value="Create Account">
+    </form>
+  </div>
+  </div>
+  {% endblock %}
+</div>
+</body>
+</html>
+

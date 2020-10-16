@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+.leftside, .rightside{
+
+height:100vh;
+width: 100%;
+}
+
+.leftside{
+background-color:ivory;
+
+
+}
+
+.leftside{
+background-color:rgb(206, 206, 206);
+
+
+}
+
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+
+h1 {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+</style>
+</head>
+<body>
+
+<div class="row">
+
+  <div class="col" >
+    <div class="leftside">
+      <div class="gallery">
+        <a target="_blank" href="https://cdn1.weddingwire.com/assets/img/wedsites/thumb/en/vintage_mountain_md.jpg">
+          <img src="https://cdn1.weddingwire.com/assets/img/wedsites/thumb/en/vintage_mountain_md.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="https://cdn1.weddingwire.com/assets/img/wedsites/thumb/en/confetti_md.jpg">
+          <img src="https://cdn1.weddingwire.com/assets/img/wedsites/thumb/en/confetti_md.jpg" alt="Forest" width="600" height="400">
+        </a>
+        
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="https://cdn1.weddingwire.com/assets/img/wedsites/thumb/en/woodland_deer_md.jpg">
+          <img src="https://cdn1.weddingwire.com/assets/img/wedsites/thumb/en/woodland_deer_md.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+      </div>
+      
+    
+  </div>
+  </div>
+  <div class="col">
+    <div class="rightside">
+    <h2>Great choice! Add your details</h2>
+    <form action="/next" method="POST" >
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Angelina Jolie"name='firstname'>
+        </div>
+        &
+        <div class="col">
+          <input type="text" class="form-control"placeholder="Brad Pitt"name='secname' >
+        </div>
+      </div>
+      <div class="row">
+        <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"name='email'>
+      </div>
+      <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+  </div>
+  </div>
+</div>
+</body>
+</html>
+
